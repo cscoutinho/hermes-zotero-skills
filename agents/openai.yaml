@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zotero Library"
+  short_description: "Read and write a Zotero library safely."
+  default_prompt: "Use $zotero-library to inspect, search, and update a Zotero library through the Web API."
+
+policy:
+  allow_implicit_invocation: true
