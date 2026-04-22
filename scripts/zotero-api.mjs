@@ -297,7 +297,7 @@ async function handleCollections(client, action, options) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Zotero-Write-Token": randomUUID(),
+        "Zotero-Write-Token": randomUUID().replace(/-/g, '').slice(0, 32),
       },
       body: payload,
     });
@@ -385,7 +385,7 @@ async function handleItems(client, action, options) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Zotero-Write-Token": randomUUID(),
+        "Zotero-Write-Token": randomUUID().replace(/-/g, '').slice(0, 32),
       },
       body: payload,
     });
